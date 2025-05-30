@@ -7,6 +7,8 @@ public class ThisStaticCheck {
 
     public static void main(String[] args) {
         ThisStaticCheck obj = new ThisStaticCheck();
+        ThisStaticCheck obj2 = new ThisStaticCheck();
         obj.display();
+        obj2.display();
     }
 }

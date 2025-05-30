@@ -8,7 +8,11 @@ public class GradeCalculator {
             total += sc.nextInt();
         }
         double percentage = total / 5.0;
-        if (percentage < 35) {
+        if(percentage<0 || percentage > 100) {
+            System.out.println("Invalid percentage");
+            return;
+        }
+        else if (percentage < 35) {
             System.out.println("Fail");
         } else if (percentage < 45) {
             System.out.println("Pass Class");
